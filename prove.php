@@ -26,7 +26,7 @@
 <body>
 
 <h2>Registrazione</h2>
-
+<!-- test -->
 <form id="registrationForm" action="login_signUp.php" method="post">
     <label for="nome_utente">Nome utente:</label>
     <input id="nome_utente" type="text" name="nome_utente" placeholder="Inserisci nome utente" required><br>
