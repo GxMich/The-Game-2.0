@@ -1,0 +1,105 @@
+header{
+    margin: 0 auto;
+    height: 100vh;
+}
+header h1{
+    color: rgb(91, 91, 91);
+    text-align: center;
+    font-size:8em;
+    padding: 0;
+    width: 100%;
+}
+header strong{
+    color: #ff6000;
+}
+header p{
+    width: 40%;
+    padding-left: 30%;
+    font-size: 1.5em;
+}
+header h3{
+    width: 40%;
+    padding-left: 30%;
+    color: #ff6000;
+}
+
+.access{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.171);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.438);
+}
+
+#signUp{
+    height: 600px;
+}
+
+.card h3{
+    font-size: 3em;
+    margin: 4vh;
+}
+.card input{
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.card .view_password_checkbox{
+    width: 30px;
+    height: 1rem;
+    margin-top: 10px;
+}
+
+.btn{
+    background: #ff6e15d3;
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.3em;
+    padding: 5px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+
+    header{
+        margin: 0 auto;
+        height: 100vh;
+    }
+
+    header h1{
+        color: rgb(91, 91, 91);
+        text-align: center;
+        font-size:3em;
+        padding: 0;
+        width: 95%;
+    }
+
+    header strong{
+        color: #ff6000;
+    }
+    
+    header h3{
+        width: 50%;
+        padding-top: 30%;
+        color: #ff6000;
+    }
+
+    header p{
+        width: 50%;
+        padding-left: 25%;
+        font-size: 1em;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}

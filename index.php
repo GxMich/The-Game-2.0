@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Game 2.0 </title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style/index.css">
     <style>
         input:focus, textarea:focus, select:focus {outline: none;}
         html,body{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
@@ -25,56 +26,73 @@
 </head>
 <body>
     <header>
-        <h1>The Game 2.0</h1>
+        <h1>The Game <strong id="version">2.0</strong></h1>
         <h3>Description:</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vero maxime similique numquam eveniet, <br>voluptatibus odio cumque quis? Esse nesciunt impedit porro quaerat aliquam saepe placeat qui obcaecati exercitationem quia?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vero maxime similique numquam eveniet, <br>voluptatibus odio cumque quis? Esse nesciunt impedit porro quaerat aliquam saepe placeat qui obcaecati exercitationem quia?<br></p>
     </header>
-    <div id="switch">
-        <div><p>ACCEDI</p></div>
-        <div><p>REGISTRATI</p></div>
+    
+
+    <div class="access">
+
+        <div id="login" class="card"><!-- LOGIN -->
+            <h3>ACCEDI</h3>
+            <form action="login_signUp.php" method="post">
+
+                <input id="name_user" type="text" name="name_user" placeholder="Username" required><br>
+
+                <input id="password_user" type="password" name="password_user" placeholder="Password" required><br>
+
+                <input type="checkbox" class="view_password_checkbox" data-target="login_password">
+                <label for="view_password_checkbox">Mostra password</label><br>
+
+                <input class="btn" type="submit" value="ACCEDI">
+            </form>
+            <p>oppure</p>
+            <button class="btn" id="btn_signUp">REGGISTRATI</button>
+            <p><strong>Errore:</strong><br>errore login</p>
+        </div>
+        
+
+
+
+
+        <div class="card"  id="signUp" style="display: none;"><!-- SIGN UP -->
+            <h3>REGGISTRATI</h3>
+            <form id="registrationForm" action="login_signUp.php" method="post">
+                <input id="name_user_signUp" type="text" name="name_user_signUp" placeholder="Username" required><br>
+
+                <input id="password_user_signUp" type="password" name="password_user" placeholder="Password" required><br>
+
+                <input id="confirm_password_user_signUp" type="password" name="confirm_password_user_signUp" placeholder="Conferma password" required><br>
+
+                <label style="font-size: 0.8em;">La password deve avere almeno 8 caratteri, <br>una lettera maiuscola e un numero</label><br>
+                <input type="checkbox" class="view_password_checkbox" data-target="signup_password">
+                <label for="view_password_checkbox">Mostra password</label><br>
+
+                <input class="btn" type="submit" value="REGISTRATI">
+            </form>
+            <p>oppure</p>
+            <button class="btn" id="btn_login">ACCEDI</button>
+            <p><strong>Errore:</strong><br>errore registrazione</p>
+        </div>
     </div>
-    <div id="login"><!-- LOGIN -->
-        <form action="login_signUp.php" method="post">
 
-            <label for="name_user">Username:</label>
-            <input id="name_user" type="text" name="name_user" placeholder="Inserisci username" required><br>
 
-            <label for="password_user">Password:</label>
-            <input id="password_user" type="password" name="password_user" placeholder="Inserisci password" required><br>
 
-            <input type="checkbox" class="view_password_checkbox" data-target="login_password">
-            <label for="view_password_checkbox">Mostra password</label><br>
-
-            <input type="reset" value="CANCELLA" >
-            <input type="submit" value="ACCEDI">
-        </form>
-        <p style="display: none;"><strong>Errore:</strong><br>errore login</p>
-
-    </div>
-    <br><br>
-    <div id="signUp"><!-- SIGN UP -->
-        <form id="registrationForm" action="login_signUp.php" method="post">
-
-            <label for="name_user_signUp">Username:</label>
-            <input id="name_user_signUp" type="text" name="name_user_signUp" placeholder="Scegli username" required><br>
-
-            <label for="password_user_signUp">Password:</label>
-            <input id="password_user_signUp" type="password" name="password_user" placeholder="Scegli una password" required><br>
-
-            <label for="confirm_password_user_signUp">Conferma password:</label>
-            <input id="confirm_password_user_signUp" type="password" name="confirm_password_user_signUp" placeholder="Conferma password" required><br>
-
-            <label>La password deve avere almeno 8 caratteri, <br>una lettera maiuscola e un numero</label><br>
-            <input type="checkbox" class="view_password_checkbox" data-target="signup_password">
-            <label for="view_password_checkbox">Mostra password</label><br>
-
-            <input type="reset" value="CANCELLA" >
-            <input type="submit" value="REGISTRATI">
-
-        </form>
-        <p style="display: none;"><strong>Errore:</strong><br>errore registrazione</p>
-    </div>
-
+    <script>
+        $(document).ready(function(){
+            $('#btn_signUp').click(function(){
+                $('#login').hide();
+                $('#signUp').show();
+            });
+            $('#btn_login').click(function(){
+                $('#login').show();
+                $('#signUp').hide();
+            });
+        });
+        
+    </script>
+        
     <script>
         $(document).ready(function(){
 
