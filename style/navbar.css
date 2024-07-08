@@ -1,0 +1,99 @@
+input:focus, textarea:focus, select:focus {outline: none;}
+html,body{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+
+body{
+    background: rgb(173, 173, 173);
+}
+
+#nav-bar{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    justify-content: left;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background: #ffff ;
+}
+
+#nav-bar h1{
+    color: rgb(91, 91, 91);
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+}
+
+#nav-bar strong{
+    color: #ff6000;
+}
+
+#icon-menu{
+    display: none;
+}
+
+#nav-bar ul{
+    display: flex;
+}
+
+#nav-bar ul a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    height: 60px;
+    min-width: 70px;
+    text-align: center;
+    max-width: 112px;
+    border: 2px solid #ff620000;
+}
+#nav-bar ul a:hover{
+    height: 60px;
+    border-bottom: #ff6000 2px solid;
+}
+
+h2{
+    position: absolute;
+    top:100px
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #icon-menu{
+        display: block;
+        margin-right: 20px;
+    }
+    #nav-bar ul{
+        padding-top: 10px;
+        padding: 0;
+        display: none;
+        position: absolute;
+        top: 60px;
+        text-align: left;
+        right: -50%;
+        width: 100%;
+        margin: 0;
+        background: #fff;
+    }
+    #nav-bar ul a{
+        padding-top: 0;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 0;
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        height: 60px;
+        min-width: none;
+        text-align: left;
+        max-width: none;
+        border: none;
+    }
+}
