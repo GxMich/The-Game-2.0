@@ -54,6 +54,7 @@ body{
 #nav-bar ul a:hover{
     height: 60px;
     border-bottom: #ff6000 2px solid;
+    color: #ff6000;
 }
 
 h2{

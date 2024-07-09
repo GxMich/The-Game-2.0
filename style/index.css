@@ -62,12 +62,17 @@ header h3{
 
 .btn{
     background: #ff6e15d3;
-    width: 300px;
+    width: 200px;
     height: 50px;
     border-radius: 10px;
     font-size: 1.3em;
     padding: 5px 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn:hover{
+    color: #ff6000;
+    background-color: rgb(91, 91, 91);;
 }
 @media only screen and (max-width: 768px) {
 

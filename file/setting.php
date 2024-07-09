@@ -13,14 +13,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/navbar.css">
     <title>Document</title>
-    <style>
-        
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <?php
     require 'file/navbar.php';
     ?>
     <h2>setting</h2>
+    
 </body>
 </html>

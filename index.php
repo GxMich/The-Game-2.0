@@ -42,7 +42,7 @@
                 <input class="btn" type="submit" value="ACCEDI">
             </form>
             <p>oppure</p>
-            <button class="btn" id="btn_signUp">REGGISTRATI</button>
+            <button class="btn" id="btn_signUp">REGISTRATI</button>
             <!-- if present, it shows the error message -->
             <?php if(isset($_SESSION['error_login'])){
                 echo "<p>".$_SESSION['error_login']."</p>";
@@ -50,7 +50,7 @@
         </div>
         <!-- SIGN UP -->
         <div class="card"  id="signUp" style="display: none;">
-            <h3>REGGISTRATI</h3>
+            <h3>REGISTRATI</h3>
             <form id="registrationForm" action="file/check.php" method="post">
                 <input id="name_user_signUp" type="text" name="name_user_signUp" placeholder="Username" required><br>
                 <input id="password_user_signUp" type="password" name="password_user_signUp" placeholder="Password" required><br>
