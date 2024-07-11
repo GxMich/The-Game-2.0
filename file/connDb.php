@@ -1,8 +1,8 @@
 <?php
     // Configuration parameters for the database connection
-    $hostname="localhost";
-    $dbname="the_game2";
-    $username="root";
+    $hostname="***";
+    $dbname="***";
+    $username="***";
     $password="";
 
     try {
