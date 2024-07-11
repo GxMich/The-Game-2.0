@@ -1,9 +1,10 @@
 <?php
     // Configuration parameters for the database connection
-    $hostname="*****";
-    $dbname="*****";
-    $username="*****";
-    $password="*****";
+    $hostname="localhost";
+    $dbname="the_game2";
+    $username="root";
+    $password="";
+
     try {
         // Creating a new PDO connection to the database
         $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);
