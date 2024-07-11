@@ -1,10 +1,6 @@
 input:focus, textarea:focus, select:focus {outline: none;}
 html,body{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
 
-body{
-    background: rgb(173, 173, 173);
-}
-
 #nav-bar{
     display: flex;
     position: fixed;
@@ -15,6 +11,7 @@ body{
     top: 0;
     left: 0;
     background: #ffff ;
+    z-index: 1;
 }
 
 #nav-bar h1{
@@ -79,7 +76,7 @@ h2{
         right: -50%;
         width: 100%;
         margin: 0;
-        background: #fff;
+        background: #e6e6e6;
     }
     #nav-bar ul a{
         padding-top: 0;

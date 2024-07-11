@@ -18,10 +18,6 @@
         .valid {
             border: 2px solid green;
         }
-        .error-message {
-            color: red;
-            display: none;
-        }
     </style>
 </head>
 <body>
@@ -35,8 +31,8 @@
         <div id="login" class="card">
             <h3>ACCEDI</h3>
             <form action="file/check.php" method="post">
-                <input id="name_user" type="text" name="name_user" placeholder="Username" required><br>
-                <input id="password_user" type="password" name="password_user" placeholder="Password" required><br>
+                <input id="name_user" class="input" type="text" name="name_user" placeholder="Username" required><br>
+                <input id="password_user" class="input" type="password" name="password_user" placeholder="Password" required><br>
                 <input type="checkbox" class="view_password_checkbox" data-target="login_password">
                 <label for="view_password_checkbox">Mostra password</label><br>
                 <input class="btn" type="submit" value="ACCEDI">
@@ -52,9 +48,9 @@
         <div class="card"  id="signUp" style="display: none;">
             <h3>REGISTRATI</h3>
             <form id="registrationForm" action="file/check.php" method="post">
-                <input id="name_user_signUp" type="text" name="name_user_signUp" placeholder="Username" required><br>
-                <input id="password_user_signUp" type="password" name="password_user_signUp" placeholder="Password" required><br>
-                <input id="confirm_password_user_signUp" type="password" name="confirm_password_user_signUp" placeholder="Conferma password" required><br>
+                <input id="name_user_signUp" class="input" type="text" name="name_user_signUp" placeholder="Username" required><br>
+                <input id="password_user_signUp" class="input" type="password" name="password_user_signUp" placeholder="Password" required><br>
+                <input id="confirm_password_user_signUp" class="input" type="password" name="confirm_password_user_signUp" placeholder="Conferma password" required><br>
                 <label style="font-size: 0.8em;">La password deve avere almeno 8 caratteri, <br>una lettera maiuscola e un numero</label><br>
                 <input type="checkbox" class="view_password_checkbox" data-target="signup_password">
                 <label for="view_password_checkbox">Mostra password</label><br>

@@ -28,6 +28,7 @@ header h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #8080800d;
 }
 .card{
     height: 500px;
@@ -47,7 +48,7 @@ header h3{
     font-size: 3em;
     margin: 4vh;
 }
-.card input{
+.card .input{
     width: 300px;
     height: 40px;
     margin-bottom: 20px;
@@ -61,6 +62,7 @@ header h3{
 }
 
 .btn{
+    margin-top: 30px;
     background: #ff6e15d3;
     width: 200px;
     height: 50px;
@@ -73,6 +75,9 @@ header h3{
 .btn:hover{
     color: #ff6000;
     background-color: rgb(91, 91, 91);;
+}
+#btn_login, #btn_signUp{
+    margin-top: 0;
 }
 @media only screen and (max-width: 768px) {
 

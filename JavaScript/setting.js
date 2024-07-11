@@ -1,10 +1,48 @@
 $(document).ready(function(){
 
+
+    // When the button with ID "btn_signUp" is clicked
+    $('#change-username').click(function(){
+        $(this).addClass('change-setting-select');
+        $('#change-password').removeClass('change-setting-select');
+        // Hide the div with ID "login"
+        $('#form-change-password').hide();
+        // Show the div with ID "signUp"
+        $('#form-change-username').show();
+    });
+
+    // When the button with ID "btn_login" is clicked
+    $('#change-password').click(function(){
+        $(this).addClass('change-setting-select');
+        $('#change-username').removeClass('change-setting-select');
+        // Show the div with ID "login"
+        $('#form-change-password').show();
+        // Hide the div with ID "signUp"
+        $('#form-change-username').hide();
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     // Retrieve the entered password
-    var passwordInput = $('#password_user_signUp');
+    var passwordInput = $('#new_password');
 
     // Retrieve the entered password confirmation
-    var confirmPassword = $('#confirm_password_user_signUp');
+    var confirmPassword = $('#confirm_new_password');
 
     /*
         This function checks whether the password entered by the user meets the mandatory criteria 
@@ -60,10 +98,10 @@ $(document).ready(function(){
         var type = this.checked ? "text" : "password";
 
         // Update the type for the relevant password fields
-        if (target === "login_password") {
-            $("#password_user").attr("type", type);
-        } else if (target === "signup_password") {
-            $("#password_user_signUp, #confirm_password_user_signUp").attr("type", type);
+        if (target === "change_username") {
+            $("#password_change_username").attr("type", type);
+        } else if (target === "change_password") {
+            $("#old_password, #new_password, #confirm_new_password").attr("type", type);
         }
     });
     // Add a submit event listener to the registration form
@@ -72,21 +110,5 @@ $(document).ready(function(){
         if (!validatePassword() || !validateConfirmPassword()) {
             event.preventDefault();
         }
-    });
-
-    // When the button with ID "btn_signUp" is clicked
-    $('#btn_signUp').click(function(){
-        // Hide the div with ID "login"
-        $('#login').hide();
-        // Show the div with ID "signUp"
-        $('#signUp').show();
-    });
-
-    // When the button with ID "btn_login" is clicked
-    $('#btn_login').click(function(){
-        // Show the div with ID "login"
-        $('#login').show();
-        // Hide the div with ID "signUp"
-        $('#signUp').hide();
     });
 });
