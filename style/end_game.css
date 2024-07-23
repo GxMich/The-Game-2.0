@@ -1,0 +1,23 @@
+body{
+    background: rgb(219, 219, 219);
+}
+.card_end_game{
+    margin-top: 60px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.card_end_game h2{
+    font-size: 3em;
+    color: #ff6000;
+}
+.card_end_game h4{
+    font-size: 1.8em;
+}
+.card_end_game p{
+    font-size: 1.5em;
+    margin: 10px;
+}

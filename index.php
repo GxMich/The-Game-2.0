@@ -23,8 +23,8 @@
 <body>
     <header>
         <h1>The Game <strong id="version">2.0</strong></h1>
-        <h3>Description:</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vero maxime similique numquam eveniet, <br>voluptatibus odio cumque quis? Esse nesciunt impedit porro quaerat aliquam saepe placeat qui obcaecati exercitationem quia?<br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vero maxime similique numquam eveniet, <br>voluptatibus odio cumque quis? Esse nesciunt impedit porro quaerat aliquam saepe placeat qui obcaecati exercitationem quia?<br></p>
+        <h3>Descrizione:</h3>
+        <p>Benvenuti su The Game 2.0, la versione rinnovata del nostro sito di giochi online! Abbiamo modernizzato sia lo stile che le funzionalità per offrirvi un'esperienza di gioco superiore. Provate i nuovi giochi a risposta aperta, che metteranno alla prova la vostra creatività. Navigazione fluida e design accattivante rendono The Game 2.0 il luogo ideale per divertirsi e sfidare se stessi. The Game 2.0 - l'evoluzione del divertimento online!</p>
     </header>
     <div class="access">
         <!-- LOGIN -->

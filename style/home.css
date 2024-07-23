@@ -1,0 +1,33 @@
+main{
+    text-align: center;
+    background: #cfcfcfb2;
+}
+main div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main div h2{
+    font-size: 4em;
+    color: #ff6000;
+}
+main div p{
+    font-size: 2em;
+    max-width: 500px;
+}
+main div a{
+    width: 100px;
+    height: 50px;
+    background: #ff6000;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+    border-radius: 10px;
+}
