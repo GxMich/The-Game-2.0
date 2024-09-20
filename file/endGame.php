@@ -27,7 +27,7 @@ if($salva === true) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/end_game.css">
-    <title>Document</title>
+    <title>The Game 2.0 - End Game</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <style>
     </style>
