@@ -3,7 +3,7 @@
 session_start();
 session_regenerate_id();
 // Include the file for database connection
-require('connDb.php');
+require __DIR__ . '/connDb.php';
 // Increment the matches count in session
 $_SESSION['matches']++;
 // Update the matches count in the database
@@ -33,7 +33,7 @@ if($salva === true) {
     </style>
 </head>
 <body>
-    <?php require 'file/navbar.php';?>
+    <?php require __DIR__ . '/navbar.php';?>
     <main>
         <div class="card_end_game">
             <h2><?php echo $_SESSION['mess_endGame'] ?></h2>

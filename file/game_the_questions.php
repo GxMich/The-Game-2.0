@@ -10,7 +10,7 @@ if (!isset($_SESSION['username']) || !isset($_COOKIE['username'])) {
     exit;
 }
 // Include the file for database connection
-require('connDb.php');
+require __DIR__ . ('\connDb.php');
 // Initialize quiz data if not already set in session
 if (!isset($_SESSION['questions']) || !isset($_SESSION['current_question']) || !isset($_SESSION['index']) || !isset($_SESSION['current_answer'])) { 
     // Fetch questions from the database
@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <?php require 'file/navbar.php'; ?>
+    <?php require __DIR__ . '/navbar.php'; ?>
     <div class="questions-answers">
     <h2>Pronto? Si inizia!!</h2>
         <form method="post">

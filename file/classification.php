@@ -19,9 +19,9 @@
 <body>
 <?php
 // Include the navbar file
-require 'file/navbar.php';
+require __DIR__ . '/navbar.php';
 // Include the file for database connection
-require 'file/connDb.php';
+require __DIR__ . '/connDb.php';
 ?>
 <div class="card_classification">
     <h2>CLASSIFICA</h2>

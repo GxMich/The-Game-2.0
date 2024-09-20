@@ -32,9 +32,9 @@ if (php_sapi_name() == "cli-server") {
             <script src="https://cdn.socket.io/4.5.3/socket.io.min.js" integrity="sha384-WPFUvHkB1aHA5TDSZi6xtDgkF0wXJcIIxXhC6h8OT8EH3fC5PWro5pWJ1THjcfEi" crossorigin="anonymous"></script>
             <script type="module">
                 const name = "PHP Built In Server";
-                const socket = io("ws://localhost:5004", {
+                const socket = io("ws://localhost:5001", {
                     auth: {
-                        token: "efc46484-deea-4a58-af40-8098b04ad16b"
+                        token: "82de03a6-bd27-464b-9c0d-4a6a0d8ab8ee"
                     },
                     withCredentials: true,
                     reconnectionDelay: 2000

@@ -9,7 +9,7 @@
     setcookie('username', "", time() - (86400 * 1));
     setcookie('score', "", time() - (86400 * 1));
     // Include the file for database connection
-    require 'file/connDb.php';
+    require __DIR__ . '/connDb.php';
     // Handle login
     if(isset($_POST['name_user']) && isset($_POST['password_user'])) {
         // Assign POST values to local variables

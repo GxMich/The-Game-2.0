@@ -11,7 +11,7 @@ if(!isset($_SESSION['username']) || !isset($_COOKIE['username'])){
     exit;
 }
 // Include the file for database connection
-require 'file/connDb.php';
+require __DIR__ . '/connDb.php';
 // Handle username change request
 if(isset($_POST['change-username'])){
     // Check if the new username is available
@@ -55,7 +55,7 @@ if(isset($_POST['change-username'])){
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <?php require 'file/navbar.php';?>
+    <?php require __DIR__ . '/navbar.php';?>
     <main>
         <h3>Modifica dati Utente</h3>
         <div id="data-change">

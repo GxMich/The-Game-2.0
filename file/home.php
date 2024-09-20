@@ -30,7 +30,7 @@
     </style>
 </head>
 <body>
-    <?php require 'file/navbar.php';?>
+    <?php require __DIR__ . '/navbar.php';?>
     <main>
         <div class="header">
             <h2>Ciao <?php echo $_SESSION['username']; ?>!<br>Pronto a metterti alla prova?</h2>
@@ -38,7 +38,7 @@
         </div>
         <div class="game">
             <h2>LE DOMANDE</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima mollitia totam exercitationem rerum blanditiis aperiam illum quas cumque laudantium labore ducimus eligendi animi suscipit ipsa dolore nulla, incidunt officia!</p>
+            <p>Il Gioco è un quiz a risposta aperta dove ti verrà presentata una domanda alla volta. Se rispondi correttamente, verrà mostrata una nuova domanda. Ogni risposta giusta ti farà guadagnare 10 punti. Il gioco termina se sbagli una risposta. Se rispondi correttamente a tutte le domande, otterrai un bonus di 100 punti in aggiunta al tuo punteggio totale.</p>
             <a href="game_the_questions.php">Gioca</a>
         </div>
     </main>

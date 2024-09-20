@@ -1,14 +1,8 @@
 <?php
     // Configuration parameters for the database connection
-<<<<<<< HEAD
-    $hostname="";
-    $dbname="";
-    $username="";
-=======
-    $hostname="***";
-    $dbname="***";
-    $username="***";
->>>>>>> c37950f6bf48dcbecc364a630075c469d78d330a
+    $hostname="localhost";
+    $dbname="the_game2";
+    $username="root";
     $password="";
     try {
         // Creating a new PDO connection to the database
@@ -90,7 +84,6 @@
             return false;
         }
     }
-<<<<<<< HEAD
     function changeUsername($password, $new_username, $old_username) {
         // Use the global database connection
         global $dbh;
@@ -245,6 +238,3 @@
         }
     }    
 ?>
-=======
-?>
->>>>>>> c37950f6bf48dcbecc364a630075c469d78d330a
